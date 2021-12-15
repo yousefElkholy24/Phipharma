@@ -1191,7 +1191,7 @@
 
 
 
-@media (max-width:767px)
+@media Screen  and (max-width:767px)
 {    
     .sliders img
     {
@@ -1201,7 +1201,6 @@
     }
       .sliders
     {
-        background-color: aqua;
         margin-bottom: 0;
         background-size: cover;
         position: absolute;
@@ -1217,7 +1216,9 @@
         height: 100%;
         text-align: center;
     }
-
+    
+   
+    
     .sliderText p
     {
         color: #000;
@@ -1345,9 +1346,17 @@
     
     
     
-  
+   .OurServices a
+    {
+        width: 60%;
+        transform: translate(30%,50%);
+    }
     
     
+    .topRightSideCenterBtn a
+    {
+    transform: translate(50%, -50%);
+    }
     
     
     .rightAboutSec
