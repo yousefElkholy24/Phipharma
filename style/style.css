@@ -1348,14 +1348,17 @@
     
    .OurServices a
     {
-        width: 60%;
-        transform: translate(30%,50%);
+        width: 70%;
+        transform: translate(20%,50%);
+        left: 0;
     }
     
     
     .topRightSideCenterBtn a
     {
-    transform: translate(50%, -50%);
+        transform: translate(20%, -60%);
+        width: auto;
+        left: 0;
     }
     
     
@@ -1406,12 +1409,14 @@
     {
         overflow: hidden;
         text-align: center;
+        
     }
     
     
     .Copyright span
     {
-        font-size: 14px;
+        font-size: 13px;
+        left: 0;
     }
 
     
