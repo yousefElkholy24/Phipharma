@@ -40,6 +40,7 @@
     padding: 20px;
 }
 
+
 .AddressInfo i , .NumberInfo i
 {
     background-color: whitesmoke;
@@ -65,7 +66,6 @@
     color: red;
     font-family: roboto;
     font-size: 14px;
-    
 }
 .AddressDetails,.NumberDetails
 {
@@ -200,25 +200,48 @@
 
 .sliders
 {
-    height: 1000px;
+    height: auto;
     width: 100%;
-    margin-top: -100px;
     position: relative;
     z-index: 0;
-    display: flex;
+    display: block;
     background-image: url(../Images/hospital%20blured.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.sliderText
+{
+    width: auto;
+    float: right;
+    transform: translate(0,100%);
+    right: 30%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+.sliderText h5
+{
+    font-size: 46px;
+    font-weight: 300;
+    color: #4A4B4C;
+    margin-bottom: 20px;
+}
 
 
+.sliderText h2
+{
+    font-size: 30px;
+    font-weight: 800;
+    color: #CD1426;
+    margin-bottom: 20px;
+}
 
-
-
-
-
-
+.sliderText p
+{
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+}
 
 
 
@@ -234,21 +257,20 @@
 {
     width: 100%;
     height: auto;
-    margin-top: 10px;
-    position: relative;
     margin: 0;
-    background-image: url(../Images/surgery2.jpg);
-    background-size: cover;
-    box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 20%);
     box-sizing: border-box;
     display: block;
+    overflow: hidden;
 }
 
 
 .section1
 {
+    background-image: url(../Images/surgery2overlay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 1000px;
+    height: auto;
     margin-top: 10px;
     background-color: #141414;
     position: relative;
@@ -257,6 +279,7 @@
     opacity: .8;
     display: block;
     align-items: center;  
+    padding: 40px;
 }
 
 .space1
@@ -366,20 +389,22 @@
 .section3
 {
     width: 100%;
-    height: 1000px;
+    height: 400px;
     background-color: white;
     box-shadow: 0px 30px 43px 0px rgb(0 0 0 / 15%);
+    padding: 3%;
+    position: relative;
+    display: block;
 }
 
 
 .Half-section3
 {
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-color: white;
-    display: flex;
-    position: relative;
-    top: 50%;
+    display: block;
+    top: 10%;
     padding: 40px;
 }
 
@@ -387,33 +412,34 @@
 {
     width: 100%;
     height: 100%;
+    display: block;
 }
 .right-half
 {
     width: 40%;
-    height: 100%;
+    height: 300px;
     position: relative;
     float: right;
     background-image: url(../Images/img1.jpg);
     background-size: cover;
     box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 20%);
     margin-left: 5%;
+    display:block;
 }
 
 
 .left-half
 {
-    width: 50%;
+    width: 45%;
     height: 100%;
     float: left;
     position: relative;
     background-color: transparent; 
-    margin-right: 5%;
-    padding-top: 30px;
+    margin-right: 2%;
+    display: inline-block;
 }
 .left-half h1
 {
-    
     color: #cd1426;
 }
 .left-half h3
@@ -436,24 +462,37 @@
     
     width: 100%;
     height: 1000px;
-    background-image: url(../Images/hospital.jpg);
     background-color: #000;
     background-size: cover;
     padding: 40px;
+    display: block;
+    text-align: center;
 }
 
+.section4 img
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 .topSec
 {
     width: 100%;
     height: 400px;
     background-color: transparent;
     margin-bottom: 40px;
+    position: relative;
+    display: block;
+
+
 }
 .bottomSec
 {
     width: 100%;
     height: 400px;
     background-color: transparent;
+    position: relative;
+    display: block;
     margin-bottom: 40px;
 }
 .OurServices
@@ -462,13 +501,15 @@
     height: 100%;
     margin-right: 25px;
     float: left;
+    text-align: center;
+    width: 40%;
 }
-.newdiv
+.ServicesTextDiv
 {
     top: 15%;
-    left: 10%;
     bottom: 50%;
     position: relative;
+    width: auto;
 }
 
 .OurServices p
@@ -496,30 +537,31 @@
     width: 50%;
     padding: 10px 25px;
     z-index: 10;
-    top: 35%;
-    left: 10%;
-    position: relative;
+    top: 10%;
     text-align: center;
+    transform: translate(50%,50%)
 }
 .Dental
 {
     background-color: #fff;
     height: 100%;
+    display: block;
     margin-right: 25px;
-    float: left;   
+    float: left;  
+    width: 28%;
 }
 .Dental img,.Medical img,.Veterinary img,.Pharmaceutical img,.Cosmetics img
 {
-    top: 10%;
-    left: 35%;
     width: 80px;
-    position: relative;
+    transform: translate(100%,50%);
+    display: block;
 }
 .Medical
 {
     background-color: #fff;
     height: 100%;
     float: left;
+        width: 28%;
 
 }
 
@@ -530,6 +572,8 @@
     height: 100%;
     margin-right: 25px;
     float: left;
+    width: 40%;
+
 }
 .Pharmaceutical
 {
@@ -537,12 +581,15 @@
     height: 100%;
     margin-right: 25px;
     float: left;
+    width: 28%;
 }
 .Cosmetics
 {
     background-color: #fff;
     height: 100%;
     float: left;
+    width: 28%;
+
 }
 
 
@@ -568,14 +615,795 @@
 
 
 
+
+
+.section5
+{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    box-shadow: 0px 30px 43px 0px rgb(0 0 0 / 15%);
+    padding: 50px 40px;
+    background-image: url(../Images/Partners.jpg);
+    background-size: cover;
+    display:block;
+}
+
+
+.sec5TopHalf
+{
+    width: 100%;
+    background-color: #CD1426;
+    height: 40%;
+    box-shadow: 0px 8px 40px 0px rgb(0 0 0 / 30%);
+    padding: 50px 60px;
+    display: block;
+}
+
+.topLeftSide
+{
+    float: left;
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: block;
+    background-image: url(../Images/doctor%202.jpg);
+    background-size: cover;
+}
+
+
+
+.topRightSide
+{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border-left: #fff solid 1px;
+}
+
+
+.topRightSideCenterDiv
+{
+    width: auto;
+    height: auto;
+    top: 30%;
+    position: relative;
+}
+
+.topRightSideCenterText
+{
+    width: 60%;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    float: left;
+}
+
+.topRightSideCenterText p
+{
+    font-size: 18px;
+    color: #ddd;
+}
+
+.topRightSideCenterBtn
+{
+       float: right;
+       width: 40%;
+       padding-top: 40px;
+}
+
+.topRightSideCenterBtn a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #4a4b4c;
+    display: block;
+    width: 90%;
+    padding: 10px 25px;
+    top: 45%;
+    left: 20%;
+    position: relative;
+    text-align: center;
+}
+
+
+.sec5Space
+{
+    width: 100%;
+    height: 20%;
+}
+
+.sec5BottomHalf
+{
+    width: 100%;
+    height: 40%;
+    display: block;
+}
+
+.sec5BottomHalfTopSec
+{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    border-bottom: #ccc solid 1px;
+    display: block;
+}
+.sec5BottomHalfBottomSec
+{
+    height: 50%;
+    width: 100%;
+    display: block;
+}
+
+.sec5BottomHalfTopSecText
+{
+    top: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.sec5BottomHalfTopSecText p
+{
+    font-size: 36px;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.sec5BottomHalfTopSecText span
+{
+    font-size: 36px;
+    color: #cd1426;
+    font-weight: bold;
+    width: auto;
+}
+
+.sec5BottomHalfBottomSec div
+{
+    display:inline-block;
+    top: 30%;
+    position: relative;
+}
+.centerSec5BottomHalfBottomSec
+{
+    left: 20%;
+    width: 100%; 
+}
+
+
+
+
+
+
+
+
 .Footer
 {
     
     width: 100%;
     margin-top: 10px;
-    height: 100px;
+    height: auto;
     background-image: url(../Images/footer.jpg);
     background-size: cover;
     display: block;
+    padding: 5% 3% 0 3%;
+    overflow: hidden;
+    
+}
+
+
+.FooterColumns
+{
+    width: 100%;
+    height: 80%;
+}
+
+.leftLogoContent,.CustomMenu,.ContactInfo,.UsefulLinks
+{
+    display: inline-block;
+    float: left;
+    width: 22%;
+}
+
+.leftLogoContent
+{
+    float: left;
+    background-color: aqua;
+    height: 70%;
+    color: #4a4b4c;
+    background-color: #DFDFDF;
+    padding: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 2%;
+    text-align: center;
+    box-shadow: 0px 8px 40px 0px rgb(0 0 0 / 30%);
+}
+
+.leftLogoContent img
+{
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.leftLogoContent p
+{
+    font-size: 18px;
+}
+
+.UsefulLinks,.CustomMenu
+{
+    height: 70%;
+    float: left;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 1%;
+}
+.UsefulLinks h4 ,.CustomMenu h4,.ContactInfo h4
+{
+    font-size: 16px;
+    color: #cccccc;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0px 0px 20px 18px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(205,5,38,0.21);
+    position: relative;
+}
+.UsefulLinks>h4:before,.CustomMenu>h4:before,.ContactInfo>h4:before
+{
+    position: absolute;
+    content: '';
+    background-color: #cd0526;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    right: auto;
+    bottom: -6px;
+    left: 0px;
+    transform: rotate(45deg);
+    
+}
+.UsefulLinks>h4:after,.CustomMenu>h4:after,.ContactInfo>h4:after
+{
+    position: absolute;
+    content: '';
+    background-color: #cd0526;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    right: 0px;
+    bottom: -6px;
+    left: auto;
+    transform: rotate(45deg);
+}
+
+.UsefulLinks ul,.CustomMenu ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.UsefulLinks ul li,.CustomMenu ul li
+{
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 30px
+}
+
+.UsefulLinks ul li a i,.CustomMenu ul li a i
+{
+    margin-right: 10px;
+}
+
+.UsefulLinks ul li a,.CustomMenu ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.UsefulLinks ul li a:hover,.CustomMenu ul li a:hover
+{
+        color: #cd0526;
+}
+
+
+
+.ContactInfo
+{
+    height: 70%;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.ContactInfo ul li a i
+{
+    background-color: #C0C0C0;
+    text-align: center;
+    padding: 15px;
+    color: #4a4b4c;
+    font-size: 22px;
+    width: 52px;
+}
+
+.ContactInfo ul li a i:hover
+{
+    color: #fff;
+    background-color: #cd0526;
+}
+
+.ContactInfo ul li a
+{
+    text-decoration: none;
+}
+
+.ContactInfo ul
+{
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.LinkDiv
+{
+    width: 100%;
+    display: block;
+}
+.IconBeforeInfo
+{
+    float: left;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.InfoDiv
+{
+    width: 67%;
+    line-height: 15px;
+    float: left;
+    display: inline-block;
+}
+.ContactTitleInFooter
+{
+    color: #757575;
+}
+
+.ContactInfoInFooter
+{
+    color: #fff;
+    font-size: 16px;
+}
+
+.ContactInfo ul li
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.Copyright
+{
+    width: 100%;
+    height: 60px;
+    background-color: #cd1426;
+    position: static;
+}
+
+.Copyright span
+{   
+    color: #fff;
+    left: 5%;
+    top: 30%;
+    position: relative;
+}
+
+
+.aboutUsDiv
+{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0px 8px 40px 0px rgb(0 0 0 / 30%);
+    position: relative;
+    padding: 0 2.5%;
+}
+
+.rightAboutSec
+{
+    float: right;
+    width: 40%;
+    height: 100%;
+    background-image: url(../Images/aboutDR.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.leftAboutSec
+{
+    float: left;
+    width: 55%;
+    height: 100%;
+    padding: 2%;
+}
+.centralizeAbout
+{
+    transform: translate(0,10%);
+}
+
+
+.AboutStyle,.ServiceStyle
+{
+    font-size: 36px;
+    font-weight: 300;
+    color: #4a4b4c;
+}
+
+
+.tradingCompany,.ServiceHead
+{
+    font-size: 36px;
+    color: #cd1426;
+    font-weight: 800;
+}
+
+.leftAboutSec span,.topServiceSection span
+{
+    font-weight: 300;
+    font-size: 24px;
+    color: #666666;
+}
+
+
+
+
+.ServicesSection
+{
+    width: 100%;
+    height: 1000px;
+    padding: 2%;
+    text-align: center;
+}
+
+
+.topServiceSection
+{
+    width: 100%;
+    height: 30%;
+}
+
+.bottomServiceSection
+{
+    width: 100%;
+    height: 70%;
+}
+
+
+.row1
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+    display: block;
+}
+
+
+.DentalServices,.MedicaleSrvices,.PharmaceuticalServices
+{
+    width: 33%;
+    height: 100%;
+    background-color: #fff;
+    display: inline-block;
+    padding: 2%;
+    float: left;
+    border-radius: 20px;
+    margin-right: .3%;
+}
+.PharmaceuticalServices
+{
+    float: right;
+}
+.iconi
+{
+    margin-bottom: 30px;
+}
+.iconi i
+{
+    border-radius: 30%;
+    background-color: transparent;
+    border: 2px solid #cd1426;
+    text-align: center;
+    padding: 15px;
+    color: #cd1426;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.iconi i:hover
+{
+    background-color: #cd1426;
+     color: #fff;
+}
+.divBottomText h2
+{
+    color: #4a4b4c;
+}
+
+.divBottomText p
+{
+    color: #AAAAAA;
+}
+
+.divBottomText p:hover
+{
+    color: #4a4b4c;
+}
+
+
+
+.row2
+{
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
+}
+
+
+.CosmeticsServices,.VeterinaryServices
+{
+    width: 49%;
+    height: 100%;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 1%;
+    border-radius: 20px;
+    float: left;
+    padding: 2%;
+}
+
+.VeterinaryServices
+{
+    float: right;
+}
+
+
+.OurLocationDiv
+{
+    padding: 2%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px)
+{    
+    .sliders img
+    {
+        width: 300px;
+        height: 500px;
+        bottom: 0;
+    }
+      .sliders
+    {
+        background-color: aqua;
+        margin-bottom: 0;
+        background-size: cover;
+        position: absolute;
+        display: block;
+    }
+    
+    .sliderText
+    {
+        position: relative;
+        display: block;
+        transform: translate(65%,-150%);
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .sliderText p
+    {
+        color: #000;
+    }
+    
+    .sliderText h2
+    {
+        font-size: 25px;
+    }
+    .sliderText h5
+    {
+        font-size: 25px;
+    }
+    
+    
+    .sec5BottomHalfTopSecText
+    {
+        top: 20%;
+    }
+    
+    
+    .section3
+    {
+        height: 750px;
+    }
+   .Half-section3,.halfs
+    {
+        height: auto;
+    }
+    .left-half
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .right-half 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .space1
+    {
+        display: none;
+    }
+    .section4
+    {
+        height: 2600px;
+    }
+    .OurServices,.Dental,.Medical,.Pharmaceutical,.Veterinary,.Cosmetics
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sec5TopHalf
+    {
+        width: 100%;
+        padding: 0;
+    }
+    .topLeftSide
+    {
+        display: none;
+    }
+    
+    
+    .topRightSideCenterText
+    {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .topRightSide
+    {
+        width: 100%;
+        border: 0;
+        float: none;
+        background-color: #CD1426;
+        text-align: center;
+    }
+    .topRightSideCenterBtn
+    {
+        width: 60%;
+        float: none;
+    }
+    
+    .section5
+    {
+        background-size: contain;
+        height: 900px
+    }
+    .Container
+    {
+        background-size: auto;
+        position: static;
+        overflow: hidden;
+        margin-top: 500px;
+        
+    }
+    .centerSec5BottomHalfBottomSec
+    {
+        text-align: center;
+    }
+    
+    .sec5BottomHalfBottomSec div
+    {
+        display: block;
+        top: 0;
+        position:static;
+        margin-top: 30px;
+    }
+    
+    .UsefulLinks ul,.CustomMenu ul
+    {
+        position: relative;
+        left: 20%;
+    }
+    
+    .UsefulLinks ul li,.CustomMenu ul li
+    {
+        text-align: left;
+    }
+    .InfoDiv
+    {
+        text-align: left;
+    }
+    
+    
+    
+  
+    
+    
+    
+    
+    .rightAboutSec
+    {
+        display: none;
+    }
+    
+    .leftAboutSec
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .centralizeAbout
+    {
+        transform: translate(0,0);
+    }
+    
+    
+    .DentalServices,.MedicaleSrvices,.PharmaceuticalServices,.CosmeticsServices,.VeterinaryServices
+    {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    
+    
+    .topServiceSection
+    {
+        height: auto;
+    }
+    .ServicesSection 
+    {
+        height: auto;
+    }
+    .bottomServiceSection
+    {
+        height: auto;
+    }  
+    
+    .leftLogoContent,.CustomMenu,.ContactInfo,.UsefulLinks
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    .Copyright 
+    {
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    
+    .Copyright span
+    {
+        font-size: 14px;
+    }
+
     
 }

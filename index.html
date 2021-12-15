@@ -9,7 +9,7 @@
         <title>
             Phipharma
         </title>
-       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
             
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -17,98 +17,41 @@
         
         <script src="https://kit.fontawesome.com/7c4e98c3e0.js" crossorigin="anonymous"></script>
         <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link href="style/nav.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
 
+    <nav>
+        <div class="logo">
+            <img src="Images/pngLogo.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#OurServices">Services</a></li>
+            <li><a href="#OurPartners">Partners</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li>
+        </ul>
+    </nav>
+    <script src="Script/nav.js"></script>
         
-        <div class="Header">
-            <div class="FirstHeader col-md-12">
-            <div class="Hlogo col-md-3 col-sm-12">
-                <a href="index.html">
-                    <img src="Images/pngLogo.png" class="imgLogo">
-                </a>
-            </div>
-            <div class="Hcontact col-lg-9 col-md-9 col-sm-12">
-                <div class="ContactAddress col-md-3">
-                <a class="AddressInfo" href="https://www.google.com/maps/place/5001+Birch+St,+Newport+Beach,+CA+92660,+USA/@33.667176,-117.858588,17z/data=!4m5!3m4!1s0x80dcde5f1c2e6577:0x20ce4d04ffb5c628!8m2!3d33.667176!4d-117.8585882?hl=en" target="_blank">
-                    <i class='fas fa-map-marker-alt marker' style='font-size:24px'></i>
-                    <div class="Address">
-                        <span class="AddressTitle"> Company Address</span>
-                         <br>
-                        <span class="AddressDetails">Newport Beach, CA</span>
-                     <br>
-                    
-                    </div>
-                </a>
-                
-                </div>
-                
-          <div class="ContactNumber col-md-3">
-                <a class="NumberInfo">
-                    <i class='fas fa-map-marker-alt marker' style='font-size:24px'></i>
-                    <div class="Number">
-                        <span class="NumberTitle"> Phone Number</span>
-                        <br>
-                        <span class="NumberDetails">+1(949)942-3660</span>
-                    
-                    </div>
-                </a>
-                
-                </div>
-                
-            </div>
-            </div>
         
-            
-            
-            <div class="SecondHeader">
-                
-                <div class="navbarmenu col-md-4">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                              <a class="nav-item nav-link" href="#">About Us</a>
-                              <a class="nav-item nav-link" href="#">Services</a>
-                              <a class="nav-item nav-link" href="#">Partners</a>
-                              <a class="nav-item nav-link" href="#">Contact Us</a>
-                            </div>
-                          
-                          </div>                         
-                        </nav>
-                </div>
-                 <div class="RightSocialMedia col-md-4">
-                              <div class="Request">
-                                  <a href="#">
-                                    <span>REQUEST MEDICAL SERVICE</span>
-                                  </a>
-                              </div>
-                              
-                     
-                     
-                              <div class="SocialMedia">
-                               
-                                  <a href="#" class="twitter">                                  
-                                    <i class="fa fa-twitter"></i>
-                                  </a>
-                                  
-                                    <a href="#" class="facebook">                                  
-                                    <i class="fa fa-facebook"></i>
-                                   </a>
-                              </div>
-
-                          </div>
-            </div>
-            
-            </div>        
+        
+        
         <div class="sliders"> 
             
             <img src="Images/dr2.png">
-        
+            <div class="sliderText">
+                <h5>Phipharma</h5>
+                <h2>We Are A Kuwaiti Trading Company</h2>
+                <p>Specializes in marketing KW medical, dental and pharmaceutical products and equipment.</p>
+            </div>
         </div>
         
         
@@ -136,20 +79,7 @@
                 
                 
                 <div class="section2">
-                <div class="Section2Links">
-                    <a class="Company" href="#" id="CompanyID">
-                        <span>OUR TRADING COMPANY</span>
-                    </a>
-                    <a class="Strategy" href="#" id="StrategyID">
-                        <span>OUR STRATEGY</span>
-                    </a>
-                    <a class="Location" href="#" id="LocationID">
-                        <span>OUR LOCATION</span>
-                    </a>
-                    
-                </div>
-                     <div class="LinksContent">           
-                    </div>               
+             
                </div>
                 
                
@@ -157,7 +87,6 @@
 
             <div class="section3">
                 
-                <div class="Half-section3">
                     <div class="halfs">
                     <div class="left-half ">
                         <h3>Watch And</h3>
@@ -165,46 +94,45 @@
                         <p>We pride itself on providing customers with world-class customer service. With a staff of in-house sales & logistics specialists, and a dedicated customer service staff, getting what you need has never been easier.</p>
                     </div>
                     <div class="right-half ">                        
-                        
                     </div>
                     </div>
                 </div>
-            </div>
             
             <div class="section4">
-                <div class="blackLayer"></div>
-            <div class="topSec col-md-12 col-sm-12">
-                    <div class="OurServices col-md-5 col-sm-8">
-                        <div class="newdiv">
+                <div class="topSec">
+                    <div class="OurServices">
+                        <div class="ServicesTextDiv">
                         <span>Our Services</span>
                         <p>See what we provide for you</p>
                         </div>
+                        <br>
+                        <br>
                         <a href="#">Check our list of services</a>
                     </div>
                 
-                    <div class="Dental col-md-3 col-sm-8">
+                    <div class="Dental">
                         <img src="Icons/dental-84x84.png">
                         <h3>Dental Services</h3>
                         <p>We offer a full array of dental services to help you maintain healthy teeth</p>
                     </div>
-                    <div class="Medical col-md-3 col-sm-8">
+                    <div class="Medical">
                         <img src="Icons/doctor-84x84.png">
                         <h3>Medical services</h3>
                         <p>To maintain or improve of health via the prevention, diagnosis, , recovery, or cure of disease, injury.</p>
                     </div>
             </div>
-            <div class="bottomSec col-md-3 col-sm-3">
-                <div class="col-md-3 col-sm-8 Pharmaceutical">
+            <div class="bottomSec">
+                <div class="Pharmaceutical">
                     <img src="Icons/woman-chemist-84x84.png">
                     <h3>Pharmaceutical Services</h3>
                         <p>All pharmaceuticals used within the facility, and the monitoring of patient drug therapy.</p>
                 </div>
-                <div class="col-md-5 col-sm-8 Veterinary">
+                <div class="Veterinary">
                     <img src="Icons/stethoscope-84x84.png">
                 <h3>Veterinary Services</h3>
                         <p>Different veterinary services fall into various categories of economic goods.</p>
                 </div>
-                <div class="col-md-3 col-sm-8 Cosmetics">
+                <div class="Cosmetics">
                 <img src="Icons/hair-dryer-84x84.png">
                 <h3>Cosmetics Services</h3>
                         <p>Cosmetics can be a big part of our overall image. we specialize in making you look and feel your best. </p>
@@ -212,17 +140,345 @@
             </div>
             </div>
             
-        
+            
+            
+            <div class="aboutUsDiv" id="AboutUs">
+                <div class="rightAboutSec"></div>
+                
+                <div class="leftAboutSec">
+                    <div class="centralizeAbout">
+                    <p class="AboutStyle">About Our</p>
+                    <p class="tradingCompany">Trading Company</p>
+                    <span>
+                        Phipharma Corporation is a distribution healthcare products. It is present in over 20 countries and specializes in Medical, Dental, Pharmaceutical products..
+                    We are in partnership with well known companies in the Middle East, which distribute medical, dental and pharmaceutical products to the government and private sectors.
+                    </span>
+                
+                </div>
+                </div>                
+            </div>
+            
+            <div class="ServicesSection" id="OurServices">
+            
+                <div class="topServiceSection">
+                    <p class="ServiceStyle">What We Do?</p>
+                    <p class="ServiceHead">Our Top Rated Services</p>
+                    <span>
+                        We develop customized solutions for International small and large Customers, Business, and to deliver Medical, Dental; Pharmaceutical equipment’s and products to the marketplace quickly and cost-effectively.
+                    </span>
+                </div>
+                
+                <div class="bottomServiceSection">
+                    <div class="row1">
+                        <div class="DentalServices">
+                            <div class="iconi">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="divBottomText">
+                                <h2>Dental Services</h2>
+                                <p>We offer a full array of dental services to help you maintain healthy teeth.</p>
+                            </div>
+                        
+                        
+                        </div>
+                        <div class="MedicaleSrvices">
+                            <div class="iconi">
+                                <i class="fas fa-first-aid"></i>
+                            </div>
+                            <div class="divBottomText">
+                                <h2>MedicaleSrvices</h2>
+                                <p>To maintain or improve of health via the prevention, diagnosis, , recovery, or cure of disease, injury.</p>
+                            </div>
+                        
+                        </div>
+                        <div class="PharmaceuticalServices">
+                        
+                            <div class="iconi">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="divBottomText">
+                                <h2>PharmaceuticalServices</h2>
+                                <p>All pharmaceuticals used within the facility, and the monitoring of patient drug therapy.</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="row2">
+                        <div class="CosmeticsServices">
+                            <div class="iconi">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="divBottomText">
+                                <h2>CosmeticsServices</h2>
+                                <p>Cosmetics can be a big part of our overall image. we specialize in making you look and feel your best.</p>
+                            </div>
+                        </div>
+                        <div class="VeterinaryServices">
+                                <div class="iconi">
+                                    <i class="far fa-dog"></i>
+                            </div>
+                            <div class="divBottomText">
+                                <h2>Veterinary Services</h2>
+                                <p>Different veterinary services fall into various categories of economic goods.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                
+                
+                </div>
+            
+            </div>
+            
+            <div class="section5">
+                
+                <div class="sec5TopHalf">
+                    <div class="topLeftSide"></div>
+                    
+                    <div class="topRightSide">
+                        <div class="topRightSideCenterDiv">
+                            <div class="topRightSideCenterText">
+                            <h3>Looking for a Medical Service?</h3>
+                            <p>We are here to help you to get your Medical Instruments.<p>
+                            </div>
+                            <div class="topRightSideCenterBtn">
+                                <a href="#">Get A Service </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sec5BottomHalf" id="OurPartners">
+                    <div class="sec5BottomHalfTopSec">
+                        <div class="sec5BottomHalfTopSecText">
+                        <p>Our Recent</p>
+                        <span>PARTNERS</span>
+                        </div>
+                    </div>
+                    <div class="sec5BottomHalfBottomSec">
+                        <div class="centerSec5BottomHalfBottomSec">
+                        <div class="col-md-3 col-lg-3 col-sm-4">
+                            <a href="#">
+                                <img src="Images/nagashiLogo.png" >
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-3 col-lg-3 col-sm-4">
+                            <a href="#">
+                        <img src="Images/swanLogo.png">
+                            </a>
+                        </div>
+                          <div class="col-md-3 col-lg-3 col-sm-4">
+                              <a href="#">
+                                  <img src="Images/TobeLogo.png">
+                              </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            
+            </div>
+            
+            <div class="OurLocationDiv" id="OurLocation">
+            
+                <p class="ServiceHead">Our Location</p>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13909.541473356885!2d47.9713212!3d29.3590036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf84c072756a11%3A0x3dca6c3a8534ba95!2sFour%20Points%20by%20Sheraton%20Kuwait!5e0!3m2!1sar!2skw!4v1639480734170!5m2!1sar!2skw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+            
+            </div>
+            
+            
+            
+     
+            
+            
+
             
         </div>
         
         
 
-   
         
         <div class="Footer">
+            <div class="FooterColumns">
+                <div class="leftLogoContent">
+                    <img src="Images/pngLogo.png">
+                    <p>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
+                </div>
+                <div class="UsefulLinks">
+                    
+                    <h4>USEFUL LINKS</h4>
+                    <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Dental Service
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Medical Service
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Pharmaceutical Service
+                        </a>        
+                    </li>
+                        
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Cosmetics Service
+                        </a>        
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Veterinary Service
+                        </a>        
+                    </li>                             
+                    </ul>
+                    
+                    
+                </div>
+                
+                
+                
+                <div class="CustomMenu">
+                    
+                    
+                    <h4>CUSTOM MENU LIST</h4>
+                    <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                           Home
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            About
+                        </a>        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Services
+                        </a>        
+                    </li>
+                        
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Partners
+                        </a>        
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                            Contact Us
+                        </a>        
+                    </li>                             
+                    </ul>
+                
+                </div>
+                
+                
+                <div class="ContactInfo" id="ContactUs">
+                
+                    <h4>CONTACT INFORMATION</h4>
+                    <ul>
+                        
+                    <li>
+                        <a href="#">
+                            <div class="LinkDiv">
+                            <div class="IconBeforeInfo">
+                            <i class="fas fa-phone-volume"></i>
+                            </div>
+                            <div class="InfoDiv">
+                            <p class="ContactTitleInFooter">Phone</p>
+                            <p class="ContactInfoInFooter">+1(949)942-3660</p>
+                            </div>
+                            </div>
+                        </a>        
+                    </li>
+                        
+                        
+                     <li>
+                        <a href="#">
+                            <div class="LinkDiv">
+                            <div class="IconBeforeInfo">
+                            <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="InfoDiv">
+                            <p class="ContactTitleInFooter">Call</p>
+                            <p class="ContactInfoInFooter">+1(949)748-9336</p>
+                            </div>
+                            </div>
+                        </a>        
+                    </li>
+                         <li>
+                        <a href="#">
+                            <div class="LinkDiv">
+                            <div class="IconBeforeInfo">
+                            <i class="fas fa-fax"></i>
+                            </div>
+                            <div class="InfoDiv">
+                            <p class="ContactTitleInFooter">Fax</p>
+                            <p class="ContactInfoInFooter">+1(949)209-2668</p>
+                            </div>
+                            </div>
+                        </a>        
+                    </li>
+                         <li>
+                        <a href="#">
+                            <div class="LinkDiv">
+                            <div class="IconBeforeInfo">
+                            <i class="fas fa-envelope-open-text"></i>
+                            </div>
+                            <div class="InfoDiv">
+                            <p class="ContactTitleInFooter">Email</p>
+                            <p class="ContactInfoInFooter">info@nagashi.us</p>
+                            </div>
+                            </div>
+                        </a>        
+                    </li>
+                    
+                        <li>
+                            <a href="#">
+                            <div class="LinkDiv">
+                            <div class="IconBeforeInfo">
+                            <i class="fas fa-map-marker-alt marker"></i>
+                            </div>
+                            <div class="InfoDiv">
+                            <p class="ContactTitleInFooter">Our office address</p>
+                            <p class="ContactInfoInFooter">5001 Birch St, Newport Beach, CA 92660</p>
+                            </div>
+                            </div>
+                             </a>        
+                    </li>
+                    </ul>
+                    
+                </div>           
+            </div>
+            
+            
+            
         </div>
-    
+        <div class="Copyright">
+            <span>© Copyright 2022. All Rights Reserved - Business Concept.co</span>
+        </div>
+    <script src="Script/script.js"></script>
     
     </body>
 
