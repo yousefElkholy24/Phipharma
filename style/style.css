@@ -209,6 +209,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.sliderbg
+{
+    display: none;
+}
 .SliderContent
 {
     width: 100%;
@@ -1269,6 +1274,7 @@
     }
     .sliderbg
     {
+        display: block;
         position: absolute; 
         width: 100%;
         height: 500px;

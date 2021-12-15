@@ -72,16 +72,21 @@ nav{
 
 /*Stying for small screens*/
 @media screen and (max-width: 767px){
+   
+    
     nav{
-    height: 6rem;
-    width: 100vw;
-    background-color: #fff  ;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    position: fixed;
-    z-index: 10; 
+        height: 6rem;
+        width: 100vw;
+        background-color: #fff  ;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+        display: flex;
+        position: fixed;
+        z-index: 10; 
     }
-    .hamburger{
+    
+    
+    .hamburger
+    {
         display:block;
         position: absolute;
         cursor: pointer;
@@ -109,14 +114,26 @@ nav{
     {
         opacity: 1;
     }
-    .nav-links.open{
+    
+    
+    .nav-links.open
+    {
         color: #CD1426;
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
     }
     
+    .nav-links.close
+    {
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+    }
+    
     
 }
+
+
 /*Animating Hamburger Icon on Click*/
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);

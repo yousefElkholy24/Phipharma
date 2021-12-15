@@ -4,10 +4,12 @@ const links = document.querySelectorAll(".nav-links li");
 
 hamburger.addEventListener('click', ()=>{
    //Animate Links
-    navLinks.classList.toggle("open");
+    navLinks.classList.toggle("open"); 
+      
+});
 
-
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
-    
+links.forEach(link => {
+  link.firstChild.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
 });
