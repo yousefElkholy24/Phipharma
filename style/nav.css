@@ -73,9 +73,13 @@ nav{
 /*Stying for small screens*/
 @media screen and (max-width: 767px){
     nav{
-        position: relative;
-        width: auto;
-        z-index: 3;
+    height: 6rem;
+    width: 100vw;
+    background-color: #fff  ;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
     }
     .hamburger{
         display:block;
