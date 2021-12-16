@@ -109,7 +109,7 @@ nav{
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
     }
-    
+     
     .nav-links li
     {
         opacity: 1;

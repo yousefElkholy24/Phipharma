@@ -12,4 +12,4 @@ links.forEach(link => {
   link.firstChild.addEventListener('click', () => {
     navLinks.classList.toggle('open');
   });
-});
+}); 
