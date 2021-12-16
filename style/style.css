@@ -223,26 +223,22 @@
 }
 .imageDiv
 {
-    float: left;
-    height: 100%;
-    display: block;
-    position: relative;
-    bottom: 0;
-    padding: 0;
+        float: left;
+        height: 100%;
+        display: block;
+        width: 30%;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        bottom: 0;
+        background-image: url(../Images/dr2.png);
 }
 
-.imageDiv img
-{
-    width: 400px;
-    margin-bottom: 0;
-    position: relative;
-    display: flex;
-    top: 7.005%;
-}
 .sliderText
 {
     width: auto;
     float: right;
+    height: auto;
     position: relative;
     top: 50%;
     right: 10%;
