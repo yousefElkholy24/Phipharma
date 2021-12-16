@@ -1272,13 +1272,7 @@
         display: block;
         background-color: #424240;
     }
-    .sliderbg
-    {
-        display: block;
-        position: absolute; 
-        width: 100%;
-        height: 500px;
-    }
+
     .sliderText p
     {
         color: #000;
@@ -1288,7 +1282,7 @@
     .SliderContent
     {
         width: 100%;
-        height: 100%;
+        height: 500px;
         display: block;
         position: relative;
     }
@@ -1297,25 +1291,21 @@
         float: left;
         height: 100%;
         display: block;
+        width: 100%;
         position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
         bottom: 0;
         padding: 0;
+        background-image: url(../Images/dr2.png);
     }
 
-    .imageDiv img
-    {
-        width: 250px;
-        margin: 20px;
-        margin-bottom: 0;
-        position: relative;
-    }
     .sliderText
     {
         width: 35%;
-        position: relative;
-        height: 100%;
+        position: absolute;
         text-align: center;
-        transform: translate(0%,50%);
+        transform: translate(0%,-40%);
     }
     .sliderText h2
     {
@@ -1403,11 +1393,8 @@
     }
     .Container
     {
-        background-size: auto;
         position: static;
-        overflow: hidden;
-        margin-top: 500px;
-        
+        overflow: hidden;        
     }
     .centerSec5BottomHalfBottomSec
     {
